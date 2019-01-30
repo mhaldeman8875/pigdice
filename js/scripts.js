@@ -1,6 +1,21 @@
 //business logic ----------------
+function PigDice() {
+  this.activePlayer = activePlayer,
+  this.playerScore = 0,
+  this.setCurrentScore = 0
+}
 
-var roll = function() {
+PigDice.prototype. = function () {
+
+};
+
+PigDice.prototype.assignId = function () {
+  this.currentId += 1;
+  return this.currentId;
+};
+
+
+var rollScore = function() {
   let n = Math.floor(Math.random() * 6) + 1;
 
   if(n === 1) {
@@ -11,7 +26,7 @@ var roll = function() {
   }
 }
 
-var hold = function() {
+var holdS = function() {
   activePlayer.updateTotalScore();
   activePlayer.setCurrentScore(0);
 
